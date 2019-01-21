@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ZPL to printer testing</title>
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="clearfix"></div>
+    <header class="body">
+        <h1>ZPL to Printer</h1>
+    </header>
+
+    <section class="body">
+        <form method="post" action="print.php">
+
+            <h4>Paste your ZPL raw code below, and push the "Let´s print, dude" button.</h4>
+            
+            <label>IP</label>
+            <input name="ip" placeholder="E.g. 192.168.1.10"></input>
+
+            <label>Port</label>
+            <input name="port" placeholder="E.g. 9100"></input>
+            
+            <label>ZPL raw code</label>
+            <textarea name="zpl" placeholder="Paste your ZPL code here"></textarea>
+            
+            <input id="submit" name="submit" type="submit" value="Let´s print, dude">
+        </form>
+    </section>
+    
+    <footer>
+        <div class="footer">
+            Made by <a href="https://fpirra.github.io/">fpirra</a>
+        </div>
+    </footer>
+
+</body>
+</html>
